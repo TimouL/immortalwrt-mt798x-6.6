@@ -75,6 +75,7 @@ platform_do_upgrade() {
         xiaomi,mi-router-wr30u-ubootmod|\
 	h3c,magic-nx30-pro|\
 	jcg,q30-pro|\
+	honor,fur-602|\
         qihoo,360t7)
 		CI_UBIPART="ubi"
     		CI_KERNPART="kernel"

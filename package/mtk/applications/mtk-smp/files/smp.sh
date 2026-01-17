@@ -752,6 +752,7 @@ setup_model()
 	*mt2500* |\
 	*zr-3020* |\
 	*360,t7* |\
+	honor,fur-602 |\
 	abt,asr3000* |\
 	*clt,r30b1* |\
 	cmcc,a10* |\

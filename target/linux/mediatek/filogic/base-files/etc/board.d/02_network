@@ -57,6 +57,7 @@ mediatek_setup_interfaces()
 	netis,nx32u|\
 	livinet,zr-3020|\
 	livinet,zr-3020-ubootmod|\
+	honor,fur-602|\
 	qihoo,360t7|\
 	*philips,hy3000*|\
 	sl,3000-emmc|\
@@ -231,6 +232,11 @@ mediatek_setup_macs()
 		;;
 	qihoo,360t7)
 		lan_mac=$(mtd_get_mac_ascii factory lanMac)
+		wan_mac=$(macaddr_add "$lan_mac" 1)
+		label_mac=$wan_mac
+		;;
+	honor,fur-602)
+		lan_mac=$(mtd_get_mac_ascii Factory lanMac)
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		label_mac=$wan_mac
 		;;
